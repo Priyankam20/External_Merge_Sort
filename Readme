@@ -1,0 +1,14 @@
+There are two stages in which algorithm is working:
+
+First one: in which a number of sorted runs are created, each run is sorted named as sorted_run_.
+
+Second: in which the runs created were merged.Firsly, maximum number of sorted runs such that one  key from each run fit into the memory minus 1(1 for buffer) are merged and similarly all the keys from all runs merged and gives the output in output.txt
+
+For the cost analysis, analysis.txt file is created in which total number of seeks, transfers and merged passes were shown which are calculated during the implmentation of algorithm.
+
+Execution and compiling:
+    make clean
+    make
+    ./main <filepath> m k n b
+
+After above execution output.txt, sorted_run_ files, merged_pass_ files, analysis.txt will be created.  
